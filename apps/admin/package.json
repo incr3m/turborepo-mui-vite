@@ -1,0 +1,24 @@
+{
+  "name": "admin",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "deploy": "vercel deploy dist --team=turborepo --confirm",
+    "dev": "vite --host 0.0.0.0 --port 3001 --clearScreen false",
+    "lint": "tsc --noEmit && eslint \"src/**/*.ts*\""
+  },
+  "dependencies": {
+    "config-mui": "*",
+    "react-parallax-tilt": "1.7.137",
+    "ui": "*",
+    "utils-mui": "*",
+    "utils-version": "*"
+  },
+  "devDependencies": {
+    "config-storybook": "*",
+    "config-tsconfig": "*",
+    "utils-test": "*"
+  }
+}
